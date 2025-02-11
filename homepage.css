@@ -1,0 +1,232 @@
+header {
+    text-align: center;
+    background-image: url("images/bground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f5f5dc;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    padding: 50px 20px;
+    
+}
+
+h1.heading {
+    margin-top: 0px;
+    letter-spacing: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    line-height: 50px;
+    margin-left: 0;
+    font-size: 2.5vw;
+    
+}
+
+body {
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top:30;
+    background-color: #333; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+}
+
+li {
+    font-weight: bold;
+}
+
+nav .login {
+    margin-left: auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+a:active {
+    background: red;
+}
+
+p.intro {
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.2rem; /* Responsive font size */
+    line-height: 1.8;
+    text-align: justify;
+    margin: 20px 10px;
+    width: 80%; /* Responsive width */
+    max-width: 900px; /* Limit max width */
+    color: #f5f5dc;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+p::first-letter {
+    font-size: 3em; /* Large size for the initial letter */
+    line-height: 1; /* Align the first letter properly */
+    margin-right: 10px; /* Spacing between the letter and text */
+    float: left; /* Float the letter to the left */
+    font-weight: bold;
+    color: #f5f5dc; /* Custom color for the letter */
+    vertical-align: top; /* Align the letter with the top of the line */
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 768px) {
+    h1.heading {
+        font-size: 4vw;
+        letter-spacing: 5px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+        padding: 10px 0;
+    }
+
+    li a {
+        padding: 10px 12px;
+    }
+
+    p.intro {
+        font-size: 1rem; /* Adjust text size */
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.heading {
+        font-size: 5vw;
+        letter-spacing: 3px;
+    }
+
+    p.intro {
+        font-size: 0.9rem;
+    }
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0; 
+}
+
+.photo-gallery img {
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+    filter: blur(0px); 
+    transition: all 0.3s ease-in-out; 
+    /*border-radius: 10px;*/
+}
+
+.photo-gallery img:hover {
+    filter: blur(0); 
+    transform: scale(1.1); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-content p{
+    max-width: 1200px;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-left: 125px;
+}
+
+.copy {
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+
+
+.list-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100vw;
+  }
+  
+  .list-item {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .list-item .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+  }
+  
+  .list-item span {
+    position:relative;
+    top: 40%;
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 80px;
+    text-align: center;
+  }
+  
+  .list-item:hover .background {
+    filter: blur(0);
+  }
+
+  .list-head {
+    font-size: 3em; /* Large size for the initial letter */
+    line-height: 1; /* Align the first letter properly */
+    font-weight: bold;
+    
+  }
